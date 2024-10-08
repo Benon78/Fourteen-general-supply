@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Imrted CDN  Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet">
+     <!-- Imported CDN  Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Imported CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Register & Login</title>
+</head>
+<body>
+    
+    <!-- heaer & nav bar -->
+     <header>
+        <div class="container-header">
+            
+            <div class="container-logo"><a href="index.html"><img src="images/Logo.jpg" alt="logo"></a></div>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search..." id="search-iput" autocomplete="off">
+                <button id="search-btn"><img  src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1"/></button>
+            </div>
+
+            <div class="cart-container">
+                <a href="add-to-cart.html"><img  src="https://img.icons8.com/ios/50/shopping-bag.png" alt="shopping-bag" id="add-to-cart-btn"/></a>
+                <span id="cart-count">0</span>
+            </div>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="btn" id="login-btn"><a href="login.html"><img src="https://img.icons8.com/ios-glyphs/30/guest-male.png" alt="guest-male"/></a>Login</button>
+        </nav>
+     </header>
+
+     <!-- main section -->
+    <main class="account-page">
+                
+            <!-- -----------------------------------Register & Login content---------------------------------- -->
+
+            <!-- ------------------------------------Register----------------------------- -->
+
+                <div class="container" id="signUp" style="display: none;">
+                    <h1 class="form-title">Register</h1>
+                    <form method="post" action="">
+                        <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+                        <div class="input-group">
+                            <label for="fName">First Name</label>
+                            <input type="text" name="FName" id="fName" placeholder="eg. Benjamin" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="lName">Last Name</label>
+                            <input type="text" name="lName" id="lName" placeholder="eg. William" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email-sign-up">Email</label>
+                            <input type="email" name="email-sign-up" id="email-sign-up" placeholder="eg. william7@gmail.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password-sign-up">Password</label>
+                            <input type="password" name="password-sign-up" id="password-sign-up" placeholder="******" minlength="8" required>
+
+                        </div>
+                        <input type="submit" class="btn" value="Sign Up" name="signUp" id="submitSignUp">
+                    </form>
+                    <p class="or">
+                        ----------or-----------
+                    </p>
+                    <div class="icons">
+                        <img width="40" id="sign-up-google" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/google-logo.png" alt="google-logo"/>
+                        <img width="40" id="sign-up-facebook" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/facebook-new.png" alt="facebook-new"/>
+                    </div>
+                    <div class="links">
+                        <p>Already Have Account?</p>
+                        <button id="signInButton">Sign In</button>
+                    </div>
+                </div>
+
+                <!-- --------------------------------------Login---------------------------- -->
+
+                <div class="container" id="signIn">
+                    <h1 class="form-title">Sign In</h1>
+                    <form method="post" action="">
+                        <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+                        <div class="input-group">
+                            <label for="email-sign-in">Email</label>
+                            <input type="email" name="email-sign-in" id="email-sign-in" placeholder="wilbenjamin7@gmail.com" required>
+
+                        </div>
+                        <div class="input-group">
+                            <label for="password-sign-in">Password</label>
+                            <input type="password" name="password-sign-in" id="password-sign-in" placeholder="*****" minlength="8" required>
+
+                        </div>
+                        <p class="recover">
+                            <a href="#">Recover Password</a>
+                        </p>
+                        <input type="submit" class="btn" value="Sign In" name="signIn" id="submitSignIn">
+                    </form>
+                    <p class="or">
+                        ----------or-----------
+                    </p>
+                    <div class="icons">
+                        <img width="40" id="sign-in-google" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/google-logo.png" alt="google-logo"/>
+                        <img width="40" id="sign-in-facebook" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/facebook-new.png" alt="facebook-new"/>
+                    </div>
+                    <div class="links">
+                        <p>Don't Have account yet?</p>
+                        <button id="signUpButton" >Sign Up</button>
+                    </div>
+                </div>
+
+        
+        
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="row-container">
+            <div class="column">
+                <h3>About Us</h3>
+                <p>Fourteen General Supply is a shop for all your computer needs located in Dar es Salaam,
+                     Tanzania. With a wide range of products at affordable prices, Visit us today and let us help you find the perfect device
+                      to fit your needs.
+                </p>
+            </div>
+            <div class="column">
+                <h3>Help & Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="return-refund.html">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="add-to-cart.html">My Orders</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-container copyright-container">
+            <p class="copyright">Copyright &copy; <span id="copyright-span"></span> Fourteen General Supply. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/benoni_atrz" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                <a href="" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/facebook-new.png" alt="facebook-new"/></a>
+                <a href="https://www.linkedin.com/in/benjamin-william-12b984310" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/linkedin.png" alt="linkedin"/></a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="firebase-auth.js"></script>
+    <!-- js -->
+    <script>
+        const signInButton = document.querySelector("#signInButton");
+        const signUpButton = document.querySelector("#signUpButton");
+        const signIn = document.querySelector("#signIn");
+        const signUp = document.querySelector("#signUp");
+
+        signInButton.addEventListener("click", () => {
+            signIn.style.display = "block";
+            signUp.style.display = "none";
+        });
+
+        signUpButton.addEventListener("click", () => {
+            signIn.style.display = "none";
+            signUp.style.display = "block";
+        });
+
+        document.addEventListener("click", (event) =>{
+   
+        if(event.target.id === "login-btn"){
+             window.location.href = 'login.html';
+            console.log("event.target.id");
+            }
+            });
+
+            // get the year for the copyright
+            const currentYear = new Date().getFullYear();
+            document.getElementById("copyright-span").textContent = `${currentYear}`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Imrted CDN  Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet">
+     <!-- Imported CDN  Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Imported CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>My Orders</title>
+</head>
+<body>
+    
+    <!-- heaer & nav bar -->
+     <header>
+        <div class="container-header">
+            
+            <div class="container-logo"><a href="index.html"><img src="images/Logo.jpg" alt="logo"></a></div>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search..." id="search-iput" autocomplete="off">
+                <button id="search-btn"><img  src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1"/></button>
+            </div>
+
+            <div class="cart-container">
+             <a href="add-to-cart.html"><img  src="https://img.icons8.com/ios/50/shopping-bag.png" alt="shopping-bag" id="add-to-cart-btn"/></a>
+                <span id="cart-count">0</span>
+            </div>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="btn" id="login-btn"><a href="login.html"><img src="https://img.icons8.com/ios-glyphs/30/guest-male.png" alt="guest-male"/></a>Login</button>
+        </nav>
+     </header>
+
+     <!-- main section -->
+    <main>
+       
+            <section class="section" id="cart-container">
+                <h2>My Orders</h2>
+            </section>
+
+        <!-- offer we provide -->
+        <section class="offers">
+            <div class="row-container">
+                <div class="col-2">
+                    <div class="column">
+                        <img width="53" height="53" src="https://img.icons8.com/external-nawicon-glyph-nawicon/64/FD7E14/external-Free-Delivery-ecommerce-nawicon-glyph-nawicon.png"
+                         alt="external-Free-Delivery-ecommerce-nawicon-glyph-nawicon"/>
+                    </div>
+                    <div class="column">
+                        <h3>Free Delivery for orders</h3>
+                        <p>
+                            Available to selected areas
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="column">
+                        <img width="64" height="64" src="https://img.icons8.com/carbon-copy/100/FD7E14/gold-medal.png" 
+                        alt="gold-medal"/>
+                    </div>
+                    <div class="column">
+                        <h3>Satisfied or refunded</h3>
+                        <p>
+                            Talk to us if product is different
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="column">
+                        <img width="53" height="53" src="https://img.icons8.com/external-smashingstocks-basic-outline-smashing-stocks/53/FD7E14/external-Customer-Support-machine-learning-icon-smashingstocks-basic-outline-smashing-stocks.png" 
+                        alt="external-Customer-Support-machine-learning-icon-smashingstocks-basic-outline-smashing-stocks"/>
+                    </div>
+                    <div class="column">
+                        <h3>Top-notch support</h3>
+                        <p>
+                            Get in touch to discuss your requirements
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="column">
+                        <img width="53" height="53" src="https://img.icons8.com/external-semi-solid-chattapat-/64/FD7E14/external-secure-payment-cyber-monday-semi-solid-chattapat-.png"
+                         alt="external-secure-payment-cyber-monday-semi-solid-chattapat-"/>
+                    </div>
+                    <div class="column">
+                        <h3>Secure payments</h3>
+                        <p>
+                            Visa, Mastercard & Mobile money or cash on delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="row-container">
+            <div class="column">
+                <h3>About Us</h3>
+                <p>Fourteen General Supply is a shop for all your computer needs located in Dar es Salaam,
+                     Tanzania. With a wide range of products at affordable prices, Visit us today and let us help you find the perfect device
+                      to fit your needs.
+                </p>
+            </div>
+            <div class="column">
+                <h3>Help & Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="return-refund.html">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="add-to-cart.html">My Orders</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-container copyright-container">
+            <p class="copyright">Copyright &copy; <span id="copyright-span"></span> Fourteen General Supply. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/benoni_atrz" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                <a href="" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/facebook-new.png" alt="facebook-new"/></a>
+                <a href="https://www.linkedin.com/in/benjamin-william-12b984310" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ios-filled/40/ff6a00/linkedin.png" alt="linkedin"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="add-to-cart.js"></script>
+</body>
+</html>
