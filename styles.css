@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: #000000;
+    background-color: #000;
 }
 /* header css */
 header {
@@ -177,10 +177,10 @@ header nav ul li:hover::after{
     background-color: #f44336;
 }
 
-.btn img{
-    vertical-align: middle;
-    object-fit: cover;
-    margin-right: 2px;
+#login-btn{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
 }
 
 
@@ -905,15 +905,15 @@ main {
 }
 
 .account-page .container .messageDiv{
-    background-color: #FF6A00;
-    color: white;
+    /* background-color: #FF6A00;
+    color: white; */
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     font-size: 1rem;
     opacity: 0;
     width: 100%;
-    animation: fadeOut 7s forwards;
+    animation: fadeOut 10s forwards;
 }
 
 @keyframes fadeOut {
