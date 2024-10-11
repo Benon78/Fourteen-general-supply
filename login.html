@@ -43,7 +43,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <button class="btn" id="login-btn"><a href="login.html"><img src="https://img.icons8.com/ios-glyphs/30/guest-male.png" alt="guest-male"/></a>Login</button>
+            <button class="btn"><a href="login.html" id="login-btn"></a></button>
         </nav>
      </header>
 
@@ -56,7 +56,7 @@
 
                 <div class="container" id="signUp" style="display: none;">
                     <h1 class="form-title">Register</h1>
-                    <form method="post" action="">
+                    <form method="post" action="" id="login-form">
                         <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
                         <div class="input-group">
                             <label for="fName">First Name</label>
@@ -94,7 +94,7 @@
 
                 <div class="container" id="signIn">
                     <h1 class="form-title">Sign In</h1>
-                    <form method="post" action="">
+                    <form method="post" action="" id="sign-form">
                         <div id="signInMessage" class="messageDiv" style="display: none;"></div>
                         <div class="input-group">
                             <label for="email-sign-in">Email</label>
@@ -107,7 +107,7 @@
 
                         </div>
                         <p class="recover">
-                            <a href="#">Recover Password</a>
+                            <a href="#" id="recover-password">Recover Password</a>
                         </p>
                         <input type="submit" class="btn" value="Sign In" name="signIn" id="submitSignIn">
                     </form>
